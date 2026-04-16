@@ -51,5 +51,13 @@ describe('Validador de Senhas', () => {
     //assert
     expect(result).toBe(false);
   });
+  test('deve aceitar senha válida', () => {
+  // arrange
+  const password = 'Abcdef1!';
+  // act
+  const result = passwordValidate(password);
+  // assert
+  expect(result).toBe(true);
+});
 });
 
