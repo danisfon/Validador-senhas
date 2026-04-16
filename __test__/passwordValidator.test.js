@@ -27,6 +27,14 @@ describe('Validador de Senhas', () => {
     //assert
     expect(result).toBe(false);
   });
+  test('deve rejeitar senha sem número', () => {
+    //arrange
+    const password = 'Abcdefgh!';
+    //act
+    const result = passwordValidate(password);
+    //assert
+    expect(result).toBe(false);
+  });
 
 });
 
