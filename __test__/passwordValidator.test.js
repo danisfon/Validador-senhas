@@ -1,4 +1,4 @@
-const validePassword = require('../src/Service/passwordValidate');
+const passwordValidate = require('../src/passwordValidate');
 
 describe('Validador de Senhas', () => {
 
@@ -6,10 +6,12 @@ describe('Validador de Senhas', () => {
     //arrange
     const password = 'Ab1!xyz';
     //act
-    const result = validePassword(password);
+    const result = passwordValidate(password);
     //assert
     expect(result).toBe(false);
   });
+
+  
 
 
 })
