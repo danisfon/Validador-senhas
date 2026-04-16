@@ -43,6 +43,13 @@ describe('Validador de Senhas', () => {
     //assert
     expect(result).toBe(false);
   });
-  
+   test('deve rejeitar senha com espaço em branco', () => {
+    //arrange
+    const password = 'GHc jhef1!';
+    //act
+    const result = passwordValidate(password);
+    //assert
+    expect(result).toBe(false);
+  });
 });
 
