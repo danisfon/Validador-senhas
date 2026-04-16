@@ -43,6 +43,6 @@ describe('Validador de Senhas', () => {
     //assert
     expect(result).toBe(false);
   });
-
+  
 });
 
