@@ -11,6 +11,15 @@ describe('Validador de Senhas', () => {
     expect(result).toBe(false);
   });
 
+  test('Senha deve ter letra maiúscula', () => {
+    //arrange
+    const password = 'ab1!xyzabc';  
+    //act
+    const result = passwordValidate(password);
+    //assert
+    expect(result).toBe(false);
+  });
+
   
 
 
